@@ -1,0 +1,26 @@
+import sys
+
+# 수열 A가 주어졌을 때, 가장 긴 증가하는 부분 수열을 구하기
+
+# 수열 A의 크기 n
+n = int(sys.stdin.readline().strip())
+
+#  수열 A의 값
+A = [0] + list(map(int, sys.stdin.readline().strip().split()))
+Dict = {i: 0 for i in A}
+
+# 정답
+ans = 0
+# 반복문 수행
+for i in range(1, n+1):
+    # 처음부터 이전값 까지
+    for j in range(i):
+        # 현재 값과 이전 값을 비교 만약 현재값이 더 크다면
+        if A[i] > A[j]:
+            # 이전에 카운트 한 개수들 중 가장 큰 개수 + 1
+            Dict[A[i]] = max(Dict[A[i]], Dict[A[j]]+1)
+    
+    # 가장 큰 값을 구함
+    ans = max(ans, Dict[A[i]])
+
+print(ans)
