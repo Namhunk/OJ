@@ -30,7 +30,7 @@ jobs:
       run: |
         git add .
         git diff
-        git config --local user.email "chaerin.dev@gmail.com"
-        git config --local user.name "chaerin-dev"
+        git config --local user.email "skagns08245@gmail.com"
+        git config --local user.name "Namhunk"
         git commit -m "Automatically Update README.md file"
         git push
