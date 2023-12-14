@@ -28,7 +28,7 @@ jobs:
         python utils/count_files.py
     - name: Run Update README.md File
       run: |
-        git add -A
+        git add ./
         git diff
         git config --local user.email "skagnsrla08245@gmail.com"
         git config --local user.name "Namhunk"
