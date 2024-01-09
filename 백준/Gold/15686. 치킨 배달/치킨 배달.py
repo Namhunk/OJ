@@ -28,7 +28,7 @@ for i in range(N):
         elif city[i][j] == 2:
             chicken.append((i, j))
 
-# 치킨집 중 3개 선택
+# 치킨집 중 M개 선택
 for c in combinations(chicken, M):
     temp = 0 # 도시의 치킨 거리
     for h in house:
