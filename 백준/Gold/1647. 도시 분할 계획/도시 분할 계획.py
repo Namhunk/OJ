@@ -3,28 +3,31 @@ import sys
 from heapq import heappush, heappop
 input = sys.stdin.readline
 
+# union - find
+def find(x):
+    if x != arr[x]: return find(arr[x])
+    return arr[x]
+
+def union(x, y):
+    x, y = find(x), find(y)
+    if x < y: arr[y] = x
+    else: arr[x] = y
+
 # 마을을 2개로 분리할 때 길 유지비의 합의 최소값
 # 2 <= N <= 1e5, 1 <= M <= 1e6
 N, M = map(int, input().strip().split())
-edge = [[] for _ in range(N+1)] # 간선 정보
+edges = []
 for _ in range(M):
     A, B, C = map(int, input().strip().split())  # A, B 의 길은 C의 비용
-    edge[A].append([C, B])
-    edge[B].append([C, A])
+    edges.append([C, A, B])
 
-visit = [True]*(N+1) # 방문 표시
-heap = [[0, 1]] # heap을 통해 최소 비용 가져옴
+arr = [i for i in range(N+1)]
+edges.sort() # 유지비 작은순 정렬
+
 ans = []
+for C, A, B in edges:
+    if find(A) == find(B): continue # 연결되지 않았다면
+    union(A, B) # 연결
+    ans.append(C) # 정답에 추가
 
-while heap:
-    w, x = heappop(heap)
-    if not visit[x]: continue # 방문하지 않고
-    if len(ans) == N: break
-    visit[x] = False # 방문처리
-    ans.append(w) # 정답에 최소 비용 추가
-
-    for NEXT in edge[x]:
-        if not visit[NEXT[1]]: continue
-        heappush(heap, NEXT)
-
-print(sum(ans) - max(ans))
+print(sum(ans) - max(ans)) # 사이클이 안만들어져도 되므로 유지비가 가장 큰 간선 하나 삭제
