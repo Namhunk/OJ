@@ -5,7 +5,7 @@ input = sys.stdin.readline
 
 # union - find
 def find(x):
-    if x != arr[x]: return find(arr[x])
+    if x != arr[x]: arr[x] = find(arr[x])
     return arr[x]
 
 def union(x, y):
