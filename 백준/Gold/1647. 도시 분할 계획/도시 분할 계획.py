@@ -24,10 +24,13 @@ for _ in range(M):
 arr = [i for i in range(N+1)]
 edges.sort() # 유지비 작은순 정렬
 
-ans = []
+ans = 0
+cnt = 0
 for C, A, B in edges:
+    if cnt >= N-2: break
     if find(A) == find(B): continue # 연결되지 않았다면
     union(A, B) # 연결
-    ans.append(C) # 정답에 추가
+    ans += C
+    cnt += 1
 
-print(sum(ans) - max(ans)) # 사이클이 안만들어져도 되므로 유지비가 가장 큰 간선 하나 삭제
+print(ans)
