@@ -22,16 +22,15 @@ def move(a, b):
     elif abs(b-a) % 2 == 0: return 4
     else: return 3
 
-def solve(n, l, r):
-    global dp
-    if n >= len(seq)-1: return 0
+dp = [[[float('inf')]*5 for _ in range(5)] for _ in range(len(seq))]
+dp[0][0][0] = 0
 
-    if dp[n][l][r] != -1:
-        return dp[n][l][r]
+for i in range(len(seq)):
+    if seq[i] == 0: break
+    for l in range(5):
+        for r in range(5):
+            dp[i+1][seq[i]][r] = min(dp[i+1][seq[i]][r], dp[i][l][r]+move(l, seq[i]))
+            dp[i+1][l][seq[i]] = min(dp[i+1][l][seq[i]], dp[i][l][r]+move(r, seq[i]))
 
-    dp[n][l][r] = min(solve(n+1, seq[n], r) + move(l, seq[n]),
-                      solve(n+1, l, seq[n]) + move(r, seq[n]))
-    return dp[n][l][r]
-
-dp = [[[-1]*5 for _ in range(5)] for _ in range(len(seq))]
-print(solve(0, 0, 0))
+ans = min([min(i) for i in dp[-1]])
+print(ans)
