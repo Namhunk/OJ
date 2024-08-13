@@ -36,7 +36,6 @@ for i in range(1, size):
     dp[i] += dp[i-1]
 
 dp = [0] + dp # dp[k]는  자릿수 k개의 모든 합
-# a, b 값은 2^k의 floor 3 -> 2, 12 -> 8, 17 -> 16
 
 def count(x):
     cnt = 0 # 1의 갯수
