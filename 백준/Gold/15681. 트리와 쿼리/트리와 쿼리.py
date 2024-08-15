@@ -11,26 +11,37 @@ N, R, Q = map(int, input().strip().split())
 
 edges = [[] for _ in range(N+1)] # 정점들 간의 간선에 대한 정보
 
+# 위상정렬을 응용 해봄
+indegree = [0]*(N+1) # 각 정점에 대한 방문 차수
 # N-1 줄에 U, V 형태로 트리에 속한 간선의 정보 (1 <= U, V <= N, U != V)
 # 이는 U와 V를 양 끝점으로 하는 간선이 트리에 속함을 의미
 for _ in range(N-1):
     U, V = map(int, input().strip().split())
     edges[U].append(V)
     edges[V].append(U)
+    indegree[U] += 1
+    indegree[V] += 1
 
-count = [-1]*(N+1) # 서브트리의 개수
-def solv(x):
-    count[x] = 1 # 기본 값 1
+from collections import deque
+que = deque()
+for i in range(1, N+1):
+    if indegree[i] == 1: # 간선이 1개인 정점들을 추가
+        que.append(i)
 
-    for i in edges[x]:
-        if count[i] == -1: # 방문하지 않은 정점에 대해
-            count[x] += solv(i) # 이전 정점의 서브트리 개수를 더함
+ans = [1]*(N+1) # 정답 배열 기본값 1
+while que:
+    curr = que.popleft()
+    if curr == R: continue # 루트 정점을 제외하고
+    indegree[curr] -= 1 # 자신의 차수를 빼줌
 
-    return count[x]
-
-solv(R)
+    for i in edges[curr]:
+        if indegree[i] > 0: # 연결 정점이 모든 정점들을 거치지 않았다면
+            ans[i] += ans[curr] # 더해줌
+        indegree[i] -= 1
+        if indegree[i] == 1:
+            que.append(i)
 
 for _ in range(Q):
     U = int(input().strip())
-    print(count[U])
-
+    print(ans[U])
+    
