@@ -44,7 +44,7 @@ R7(D) = R5(D-1) + R6(D-1)
 피보나치 행렬 곱과 비슷
 """
 
-def mul(mat1, mat2):
+def mul(mat1, mat2): # 행렬 곱 함수
     res = [[0]*len(mat2[0]) for _ in range(len(mat1))]
     for i in range(len(mat1)):
         for j in range(len(mat2[0])):
@@ -57,19 +57,14 @@ def mul(mat1, mat2):
     res = tuple(res)
     return res
 
-def solv(matrix, n):
-    if n == 1:
-        return matrix
+ans = [[0]*8 for _ in range(8)] # 제곱수가 홀수 일때 복사
+for i in range(8):
+    ans[i][i] = 1
 
-    temp = solv(matrix, n//2)
-    res = mul(temp, temp)
+while D > 0:
+    if D & 1: # 제곱수가 홀수이면
+        ans = mul(matrix, ans)
+    matrix = mul(matrix, matrix)
+    D //= 2
 
-    if n % 2 == 1:
-        res = mul(res, matrix)
-
-    return res
-
-ans = ((1,), (0,), (0,), (0,), (0,), (0,), (0,), (0,))
-
-ans = mul(solv(matrix, D), ans)
 print(ans[0][0])
