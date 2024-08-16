@@ -24,7 +24,7 @@ def upper_bound(x):
     while l < r:
         m = (l+r)//2
 
-        if card[find(m)] <= x: l = m+1
+        if card[find(m)] <= x: l = m+1 # 현재 카드가 K[i]의 카드보다 크도록
         else: r = m
 
     return find(l)
@@ -41,10 +41,12 @@ def union(x, y):
     parent[x] = y
 
 for i in range(K):
-    idx = upper_bound(nums[i])
+    idx = upper_bound(nums[i]) # K[i] 보다 큰 카드의 위치
 
-    if idx >= M:
+    if idx >= M: # 범위를 넘어가는 카드라면 앞의 값들 부터 
         idx = find(0)
 
     print(card[find(idx)])
-    union(idx, idx+1)
+    union(idx, idx+1) # 다음 위치의 카드로 옮김
+
+
