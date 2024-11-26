@@ -1,6 +1,7 @@
 import sys
 input = sys.stdin.readline
 
+sys.setrecursionlimit(10**6)
 # 첫째 줄 부터 K줄에 걸쳐 구한 구간의 합을 출력한다. 단 정답은 -2e63 <= ans <= 2e63-1 범위의 정수
 # 세그먼트 트리?
 
