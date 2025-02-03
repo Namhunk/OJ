@@ -9,42 +9,35 @@ input = sys.stdin.readline
 N = int(input().strip())
 A = list(map(int, input().strip().split()))
 
-idx = {j: i for i, j in enumerate(sorted(set(A)))}
-D = len(set(A))
+def solve(N, A):
+    idx = {j: i for i, j in enumerate(sorted(set(A)))} # 각 숫자들을 크기순으로 0 부터 번호 부여
+    D = len(set(A)) # 총 숫자들의 개수
+    arr = [[0]*(N+1) for _ in range(D)] # 각 숫자들에 대해 중복되는 숫자의 위치를 나타낼 배열
 
-arr = [[0]*(N+1) for _ in range(D)]
-for i in range(N):
-    arr[idx[A[i]]][i+1] = 1
-    
-for d in range(D):
-    for i in range(1, N+1):
-        arr[d][i] += arr[d][i-1]
+    for i in range(N):
+        arr[idx[A[i]]][i+1] = 1 # A 배열에서 현재 위치의 숫자에 1 표시
 
-start = N if N % 2 == 0 else N-1
-for i in range(start, 1, -2):
-    half = i // 2
-    for l in range(N-i+1):
-        r = l + i -1
-        m = (l + half -1)
-        flag = True
+    for d in range(D):
+        for i in range(1, N+1):
+            arr[d][i] += arr[d][i-1] # 각 숫자들의 위치를 누적합으로 표시
 
-        for d in range(D):
-            left = arr[d][m+1] - arr[d][l]
-            right = arr[d][r+1] - arr[d][m+1]
-            if left != right:
-                flag = False
-                break
+    start = N if N % 2 == 0 else N-1 # 배열의 길이가 짝수인지 홀수인지에 따라 최대 길이 설정
+    for i in range(start, 1, -2): # 길이는 짝수, 2씩 감소
+        for l in range(N-i+1): # 시작점
+            r = l + i - 1 # 종료 지점
+            m = (l + r) // 2 # 중간
+            flag = True # 배열의 숫자들이 같은지 확인
 
-        if flag:
-            print(i)
-            exit()
+            for d in range(D): # 각 숫자들에 대해
+                left = arr[d][m+1] - arr[d][l] # 왼쪽 배열
+                right = arr[d][r+1] - arr[d][m+1] # 오른쪽 배열
+                if left != right: # 왼쪽 오른쪽 배열에서 현재 숫자의 개수가 다른지
+                    flag = False
+                    break
 
-print(0)
+            if flag: # 모든 숫자가 왼쪽 오른쪽에 같은 개수로 있다면
+                return i
 
+    return 0 # 없다면 0
 
-
-
-"""
-연속된 구간을 반으로 나눌때 각 구간들의 숫자들의 개수가 같은지
-
-"""
+print(solve(N, A))
