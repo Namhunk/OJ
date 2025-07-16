@@ -10,22 +10,18 @@ w, n = map(int, input().strip().split())
 # A 입력 (1 <= A[i] <= 200,000) 각 물품의 무게는 모두 다름
 A = sorted(list(map(int, input().strip().split())))
 
-s = [0]*(w+1) # 두 물품의 합 < w
-def solve():
-    for i in range(n):
-        for j in range(i):
-            # 두 수의 합이 w 보다 작은 경우만
-            SUM = A[i]+A[j]
-            if w <= SUM: break
-            s[SUM] = (j, i)
+arr = [0]*(4*2*pow(10,5)+1)
+for i in range(2, n-1):
+    for j in range(i-1):
+        arr[A[i-1]+A[j]] = 1
 
-    for i in range(n):
-        for j in range(i):
-            SUM = A[i] + A[j]
-            if w <= SUM: break
-            if s[w-SUM] and i not in s[w-SUM] and j not in s[w-SUM]:
-                return 'YES'
+    for j in range(i+1, n):
+        SUM = A[i] + A[j]
+        if SUM >= w:
+            break
 
-    return 'NO'
+        if arr[w-SUM]:
+            print('YES')
+            exit()
 
-print(solve())
+print('NO')
