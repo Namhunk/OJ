@@ -7,54 +7,49 @@ sys.setrecursionlimit(10**5)
 N, M = map(int, input().strip().split())
 
 graph = [[] for _ in range(N*2+1)]
-reverse_graph = [[] for _ in range(N*2+1)]
+
 # 두 정수 i, j (1 <= |i|, |j| <= N)
 for _ in range(M):
     i, j = map(int, input().strip().split())
     graph[-i].append(j)
     graph[-j].append(i)
 
-    reverse_graph[i].append(-j)
-    reverse_graph[j].append(-i)
-
 def dfs(x):
-    visit[x] = 1
-    for nx in graph[x]:
-        if visit[nx]: continue
-        dfs(nx)
+    global cnt
+    cnt += 1
     stack.append(x)
+    visit[x] = cnt
+    parent = visit[x]
+    for nx in graph[x]:
+        if visit[nx] == -1:
+            parent = min(parent, dfs(nx))
+        elif visit[nx] > 0:
+            parent = min(parent, visit[nx])
 
-def reverse_dfs(x):
-    visit[x] = 1
-    ids[x] = idx
-    for nx in reverse_graph[x]:
-        if visit[nx]: continue
-        reverse_dfs(nx)
+    if visit[x] == parent:
+        scc = set()
+        while stack:
+            curr = stack.pop()
+            if -curr in scc:
+                print(0)
+                exit()
 
-visit = [0]*(N*2+1)
+            scc.add(curr)
+            visit[curr] = 0
+            if curr == x: break
+
+    return parent
+
 stack = []
+visit = [-1]*(N*2+1)
+cnt = 0
 
-for i in range(1, N*2+1):
-    if visit[i]: continue
+for i in range(-N, N+1):
+    if i == 0: continue
+    if visit[i] > 0: continue
     dfs(i)
-
-visit = [0]*(N*2+1)
-ids = [0]*(N*2+1)
-idx = 0
-
-while stack:
-    x = stack.pop()
-    if visit[x]: continue
-    reverse_dfs(x)
-    idx += 1
-
-for i in range(1, N+1):
-    if ids[i] == ids[-i]:
-        print(0)
-        break
 else:
     print(1)
-
 """
 
 """
