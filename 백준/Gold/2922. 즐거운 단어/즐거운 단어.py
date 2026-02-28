@@ -1,48 +1,36 @@
 import sys
 input = sys.stdin.readline
-sys.setrecursionlimit(2000)
 
+from collections import deque
 def solve(word):
-    memo = {} # 진행상태 저장
+    que = deque([(0, 0, 0, 0, 1)])
 
-    # 현재 위치, 모음 개수, 자음 개수, L 포함 여부
-    def dfs(idx, v_cnt, c_cnt, has_l):
-        # 자음, 모음이 연속된 경우 0 반환
-        if v_cnt >= 3 or c_cnt >= 3:
-            return 0
-        
-        # 마지막 단어를 통과한 경우
+    ans = 0
+    while que:
+        idx, v_cnt, c_cnt, has_l, ret = que.popleft()
+
+        if v_cnt >= 3 or c_cnt >= 3: continue
+
         if idx == len(word):
-            return 1 if has_l else 0
+            if has_l:
+                ans += ret
+            continue
+
+        if word[idx] == '_':
+            que.append((idx+1, v_cnt+1, 0, has_l, ret*5))
+            que.append((idx+1, 0, c_cnt+1, 1, ret))
+            que.append((idx+1, 0, c_cnt+1, has_l, ret*20))
         
-        # 현재 상태가 이미 존재하는지
-        state = (idx, v_cnt, c_cnt, has_l)
-        if state in memo:
-            return memo[state]
-        
-        ans = 0
-        char = word[idx]
-        
-        # 밑줄인 경우 3가지로 나뉨
-        if char == '_':
-            ans += 5 * dfs(idx + 1, v_cnt + 1, 0, has_l)    # 모음
-            ans += 20 * dfs(idx + 1, 0, c_cnt + 1, has_l)   # 자음
-            ans += 1 * dfs(idx + 1, 0, c_cnt + 1, True)     # L
-            
-        # 이미 정해진 문자인 경우
         else:
-            if char in vowel: # 모음인 경우
-                ans += dfs(idx + 1, v_cnt + 1, 0, has_l)
-            elif char == 'L': # L인 경우
-                ans += dfs(idx + 1, 0, c_cnt + 1, True)
-            else: # L이 아닌 자음인 경우
-                ans += dfs(idx + 1, 0, c_cnt + 1, has_l)
-                
-        # 계산 결과 메모이제이션에 저장 후 반환
-        memo[state] = ans
-        return ans
+            if word[idx] in vowel:
+                que.append((idx+1, v_cnt+1, 0, has_l, ret))
+            elif word[idx] == 'L':
+                que.append((idx+1, 0, c_cnt+1, 1, ret))
+            else:
+                que.append((idx+1, 0, c_cnt+1, has_l, ret))
     
-    return dfs(0, 0, 0, 0)
+    return ans
+
     
 if __name__ == '__main__':
     vowel     = set(['A', 'E', 'I', 'O', 'U']) # 모음
