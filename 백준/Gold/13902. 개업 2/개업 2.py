@@ -11,9 +11,11 @@ def solve():
     # 한번의 행동에 요리할 수 있는 모든 그릇의 크기
     cook = set() # 요리를 1회만 할 때 그릇들의 크기를 저장(중복 x)
     for i in range(M):
+        if S[i] > N: continue
         # 1개만 사용
         cook.add(S[i])
         for j in range(i+1, M):
+            if S[i] + S[j] > N: continue
             # 2개 사용
             cook.add(S[i] + S[j])
     
@@ -21,11 +23,10 @@ def solve():
     
     dp = [float('inf')]*(N+1)
     dp[0] = 0
-    for i in range(len(cook)):
-        for j in range(1, N+1):
-            if j - cook[i] < 0: continue
-            dp[j] = min(dp[j], dp[j-cook[i]] + 1)
-        
+    for c in cook:
+        for j in range(c, N+1):
+            if dp[j-c] + 1 < dp[j]:
+                dp[j] = dp[j-c] + 1
     
     if dp[N] == float('inf'):
         print(-1)
