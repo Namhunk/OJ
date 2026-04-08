@@ -5,10 +5,19 @@ def solve():
     # k(1 <= k <= 10^18)
     k = int(input().strip())
 
-    x = k-1
+    print(find(k, 0))
 
-    ones = x.bit_count()
-    print(ones & 1)
+def find(k, flip):
+    if k == 1:
+        return flip
+    
+    L = 1
+    while L < k:
+        L <<= 1
+
+    mid = L // 2
+    if k <= mid: return find(k, flip)
+    else: return find(k-mid, flip^1)
 
 if __name__ == '__main__':
     solve()
