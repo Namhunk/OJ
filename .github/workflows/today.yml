@@ -24,7 +24,7 @@ jobs:
       - name: 오늘의 문제 뽑기
         env:
           REROLL: ${{ inputs.reroll }}
-          # PICK_LANG: python3     # (선택) 특정 언어로 풀 수 있는 문제만 — 아래 '설정' 참고
+          PICK_LANG: python3     # (선택) 특정 언어로 풀 수 있는 문제만 — 아래 '설정' 참고
         run: node .github/scripts/pick-problem.mjs
 
       - name: 변경분 커밋
