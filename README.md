@@ -4,7 +4,7 @@ hello!
 
 
 <!-- TODAY:START -->
-**오늘의 문제 · 2026-08-14** [🎲](https://github.com/Namhunk/OJ/issues/new?title=reroll&labels=reroll)
+**오늘의 문제 · 2026-08-14**
 
 1. [단어 퍼즐](https://school.programmers.co.kr/learn/courses/30/lessons/12983)
 2. [최솟값 만들기](https://school.programmers.co.kr/learn/courses/30/lessons/12941)
