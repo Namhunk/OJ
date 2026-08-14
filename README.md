@@ -4,11 +4,11 @@ hello!
 
 
 <!-- TODAY:START -->
-**오늘의 문제 · 2026-08-14**
+**오늘의 문제 · 2026-08-15**
 
-1. [단어 퍼즐](https://school.programmers.co.kr/learn/courses/30/lessons/12983)
-2. [최솟값 만들기](https://school.programmers.co.kr/learn/courses/30/lessons/12941)
-3. [홀짝트리](https://school.programmers.co.kr/learn/courses/30/lessons/388354)
+1. [이모티콘 할인행사](https://school.programmers.co.kr/learn/courses/30/lessons/150368)
+2. [[PCCP 기출문제] 4번 / 수식 복원하기](https://school.programmers.co.kr/learn/courses/30/lessons/340210)
+3. [단어 퍼즐](https://school.programmers.co.kr/learn/courses/30/lessons/12983)
 
 <sub>매일 자정(KST) 자동 갱신 · 다시 뽑기: Actions → 해당 워크플로 → Run workflow(reroll 체크)</sub>
 <!-- TODAY:END -->
