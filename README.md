@@ -4,11 +4,11 @@ hello!
 
 ## 프로그래머스 문제
 <!-- TODAY:START -->
-**오늘의 문제 · 2026-08-15**
+**오늘의 문제 · 2026-08-16**
 
-1. [[PCCP 기출문제] 4번 / 수레 움직이기](https://school.programmers.co.kr/learn/courses/30/lessons/250134)
-2. [경사로의 개수](https://school.programmers.co.kr/learn/courses/30/lessons/214290)
-3. [N개의 최소공배수](https://school.programmers.co.kr/learn/courses/30/lessons/12953)
+1. [단어 퍼즐](https://school.programmers.co.kr/learn/courses/30/lessons/12983)
+2. [[3차] 방금그곡](https://school.programmers.co.kr/learn/courses/30/lessons/17683)
+3. [기차 선로](https://school.programmers.co.kr/learn/courses/30/lessons/468381)
 
 <sub>매일 자정(KST) 자동 갱신 · 다시 뽑기: Actions → 해당 워크플로 → Run workflow(reroll 체크)</sub>
 <!-- TODAY:END -->
