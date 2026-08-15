@@ -6,9 +6,9 @@ hello!
 <!-- TODAY:START -->
 **오늘의 문제 · 2026-08-15**
 
-1. [숫자 타자 대회](https://school.programmers.co.kr/learn/courses/30/lessons/136797)
-2. [행렬 테두리 회전하기](https://school.programmers.co.kr/learn/courses/30/lessons/77485)
-3. [가장 큰 삼각형 덩어리](https://school.programmers.co.kr/learn/courses/30/lessons/389629)
+1. [단어 퍼즐](https://school.programmers.co.kr/learn/courses/30/lessons/12983)
+2. [미로 탈출 명령어](https://school.programmers.co.kr/learn/courses/30/lessons/150365)
+3. [택배상자](https://school.programmers.co.kr/learn/courses/30/lessons/131704)
 
 <sub>매일 자정(KST) 자동 갱신 · 다시 뽑기: Actions → 해당 워크플로 → Run workflow(reroll 체크)</sub>
 <!-- TODAY:END -->
