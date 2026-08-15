@@ -6,9 +6,9 @@ hello!
 <!-- TODAY:START -->
 **오늘의 문제 · 2026-08-15**
 
-1. [단어 퍼즐](https://school.programmers.co.kr/learn/courses/30/lessons/12983)
-2. [미로 탈출 명령어](https://school.programmers.co.kr/learn/courses/30/lessons/150365)
-3. [택배상자](https://school.programmers.co.kr/learn/courses/30/lessons/131704)
+1. [[PCCP 기출문제] 4번 / 수레 움직이기](https://school.programmers.co.kr/learn/courses/30/lessons/250134)
+2. [경사로의 개수](https://school.programmers.co.kr/learn/courses/30/lessons/214290)
+3. [N개의 최소공배수](https://school.programmers.co.kr/learn/courses/30/lessons/12953)
 
 <sub>매일 자정(KST) 자동 갱신 · 다시 뽑기: Actions → 해당 워크플로 → Run workflow(reroll 체크)</sub>
 <!-- TODAY:END -->
