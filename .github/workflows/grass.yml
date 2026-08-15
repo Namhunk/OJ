@@ -1,0 +1,64 @@
+name: 잔디 갱신
+
+on:
+  push:
+    branches: [main]
+    paths-ignore:
+      - 'assets/**'          # 봇이 만든 SVG 커밋으로 재실행되지 않게
+      - 'README.md'
+  schedule:
+    - cron: '0 15 * * *'      # 매일 00:00 KST (잔디 + 오늘의 문제 함께 갱신)
+  workflow_dispatch:           # 수동 실행 버튼
+    inputs:
+      reroll:
+        description: '오늘의 문제 다시 뽑기'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: grass
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0       # 전체 커밋 히스토리 필요
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: 잔디 SVG 생성
+        run: node .github/scripts/streak-grass.mjs
+
+      - name: 오늘의 문제 뽑기
+        # push(=풀이 커밋)에는 재추천하지 않음 → 자정(schedule)·수동 리롤에서만 갱신
+        # (풀이 시 solved 집합이 바뀌어 추천이 흔들리는 것 방지)
+        if: github.event_name != 'push'
+        env:
+          REROLL: ${{ inputs.reroll }}
+          PICK_LANG: cpp        # C++로 제출 가능한 문제만 추천
+        run: node .github/scripts/pick-problem.mjs
+
+      - name: 변경분 커밋 (+이미지 캐시 무효화)
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          # 잔디 SVG가 바뀐 경우에만 README 이미지 주소의 ?v= 를 갱신 → 캐시 강제 무효화
+          if ! git diff --quiet -- assets/heatmap-dark.svg assets/heatmap-light.svg; then
+            V=$(date +%s)
+            sed -i -E "s#(assets/heatmap-(dark|light)\.svg)(\?v=[0-9]+)?#\1?v=$V#g" README.md
+          fi
+          git add -A
+          if git diff --cached --quiet; then
+            echo "변경 없음"
+          else
+            git commit -m "chore: 잔디·오늘의 문제 갱신 [skip ci]"
+            git push
+          fi
