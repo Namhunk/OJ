@@ -12,3 +12,8 @@ hello!
 
 <sub>매일 자정(KST) 자동 갱신 · 다시 뽑기: Actions → 해당 워크플로 → Run workflow(reroll 체크)</sub>
 <!-- TODAY:END -->
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/heatmap-dark.svg?v=1786764332">
+  <img alt="이 저장소 풀이 잔디" src="assets/heatmap-light.svg?v=1786764332">
+</picture>
