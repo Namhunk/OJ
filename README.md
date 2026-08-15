@@ -18,4 +18,4 @@ hello!
   <img alt="이 저장소 풀이 잔디" src="assets/heatmap-light.svg?v=1786764332">
 </picture>
 
-출처 [pill27211/programmers-daily](https://github.com/pill27211/programmers-daily)
+출처 [pill27211-programmers-daily](https://github.com/pill27211/programmers-daily)
