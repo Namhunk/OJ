@@ -6,16 +6,16 @@ hello!
 <!-- TODAY:START -->
 **오늘의 문제 · 2026-08-17**
 
-1. [에어컨](https://school.programmers.co.kr/learn/courses/30/lessons/214289)
-2. [할인 행사](https://school.programmers.co.kr/learn/courses/30/lessons/131127)
-3. [매출 하락 최소화](https://school.programmers.co.kr/learn/courses/30/lessons/72416)
+1. [숫자 타자 대회](https://school.programmers.co.kr/learn/courses/30/lessons/136797)
+2. [두 큐 합 같게 만들기](https://school.programmers.co.kr/learn/courses/30/lessons/118667)
+3. [징검다리](https://school.programmers.co.kr/learn/courses/30/lessons/43236)
 
 <sub>매일 자정(KST) 자동 갱신 · 다시 뽑기: Actions → 해당 워크플로 → Run workflow(reroll 체크)</sub>
 <!-- TODAY:END -->
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/heatmap-dark.svg?v=1786855284">
-  <img alt="이 저장소 풀이 잔디" src="assets/heatmap-light.svg?v=1786855284">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/heatmap-dark.svg?v=1786893788">
+  <img alt="이 저장소 풀이 잔디" src="assets/heatmap-light.svg?v=1786893788">
 </picture>
 
 출처 [pill27211-programmers-daily](https://github.com/pill27211/programmers-daily)
