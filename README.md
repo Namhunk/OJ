@@ -4,11 +4,11 @@ hello!
 
 ## 프로그래머스 문제
 <!-- TODAY:START -->
-**오늘의 문제 · 2026-08-16**
+**오늘의 문제 · 2026-08-17**
 
-1. [최고 속도](https://school.programmers.co.kr/learn/courses/30/lessons/468376)
-2. [단어 퍼즐](https://school.programmers.co.kr/learn/courses/30/lessons/12983)
-3. [게임 맵 최단거리](https://school.programmers.co.kr/learn/courses/30/lessons/1844)
+1. [에어컨](https://school.programmers.co.kr/learn/courses/30/lessons/214289)
+2. [할인 행사](https://school.programmers.co.kr/learn/courses/30/lessons/131127)
+3. [매출 하락 최소화](https://school.programmers.co.kr/learn/courses/30/lessons/72416)
 
 <sub>매일 자정(KST) 자동 갱신 · 다시 뽑기: Actions → 해당 워크플로 → Run workflow(reroll 체크)</sub>
 <!-- TODAY:END -->
