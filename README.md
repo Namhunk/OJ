@@ -4,11 +4,11 @@ hello!
 
 ## 프로그래머스 문제
 <!-- TODAY:START -->
-**오늘의 문제 · 2026-08-17**
+**오늘의 문제 · 2026-08-18**
 
 1. [숫자 타자 대회](https://school.programmers.co.kr/learn/courses/30/lessons/136797)
-2. [두 큐 합 같게 만들기](https://school.programmers.co.kr/learn/courses/30/lessons/118667)
-3. [징검다리](https://school.programmers.co.kr/learn/courses/30/lessons/43236)
+2. [격자 뒤집기 미로](https://school.programmers.co.kr/learn/courses/30/lessons/389630)
+3. [과제 진행하기](https://school.programmers.co.kr/learn/courses/30/lessons/176962)
 
 <sub>매일 자정(KST) 자동 갱신 · 다시 뽑기: Actions → 해당 워크플로 → Run workflow(reroll 체크)</sub>
 <!-- TODAY:END -->
