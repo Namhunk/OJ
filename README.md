@@ -6,16 +6,16 @@ hello!
 <!-- TODAY:START -->
 **오늘의 문제 · 2026-08-19**
 
-1. [징검다리](https://school.programmers.co.kr/learn/courses/30/lessons/43236)
-2. [매칭 점수](https://school.programmers.co.kr/learn/courses/30/lessons/42893)
+1. [4단 고음](https://school.programmers.co.kr/learn/courses/30/lessons/1831)
+2. [보행자 천국](https://school.programmers.co.kr/learn/courses/30/lessons/1832)
 3. [뒤에 있는 큰 수 찾기](https://school.programmers.co.kr/learn/courses/30/lessons/154539)
 
 <sub>매일 자정(KST) 자동 갱신 · 다시 뽑기: Actions → 해당 워크플로 → Run workflow(reroll 체크)</sub>
 <!-- TODAY:END -->
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/heatmap-dark.svg?v=1787028849">
-  <img alt="이 저장소 풀이 잔디" src="assets/heatmap-light.svg?v=1787028849">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/heatmap-dark.svg?v=1787067220">
+  <img alt="이 저장소 풀이 잔디" src="assets/heatmap-light.svg?v=1787067220">
 </picture>
 
 출처 [pill27211-programmers-daily](https://github.com/pill27211/programmers-daily)
