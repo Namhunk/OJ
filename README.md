@@ -4,11 +4,11 @@ hello!
 
 ## 프로그래머스 문제
 <!-- TODAY:START -->
-**오늘의 문제 · 2026-08-18**
+**오늘의 문제 · 2026-08-19**
 
-1. [GPS](https://school.programmers.co.kr/learn/courses/30/lessons/1837)
-2. [격자 뒤집기 미로](https://school.programmers.co.kr/learn/courses/30/lessons/389630)
-3. [광물 캐기](https://school.programmers.co.kr/learn/courses/30/lessons/172927)
+1. [징검다리](https://school.programmers.co.kr/learn/courses/30/lessons/43236)
+2. [매칭 점수](https://school.programmers.co.kr/learn/courses/30/lessons/42893)
+3. [뒤에 있는 큰 수 찾기](https://school.programmers.co.kr/learn/courses/30/lessons/154539)
 
 <sub>매일 자정(KST) 자동 갱신 · 다시 뽑기: Actions → 해당 워크플로 → Run workflow(reroll 체크)</sub>
 <!-- TODAY:END -->
