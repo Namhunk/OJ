@@ -4,11 +4,11 @@ hello!
 
 ## 프로그래머스 문제
 <!-- TODAY:START -->
-**오늘의 문제 · 2026-08-19**
+**오늘의 문제 · 2026-08-20**
 
-1. [4단 고음](https://school.programmers.co.kr/learn/courses/30/lessons/1831)
-2. [보행자 천국](https://school.programmers.co.kr/learn/courses/30/lessons/1832)
-3. [뒤에 있는 큰 수 찾기](https://school.programmers.co.kr/learn/courses/30/lessons/154539)
+1. [괄호 회전하기](https://school.programmers.co.kr/learn/courses/30/lessons/76502)
+2. [에어컨](https://school.programmers.co.kr/learn/courses/30/lessons/214289)
+3. [가장 큰 삼각형 덩어리](https://school.programmers.co.kr/learn/courses/30/lessons/389629)
 
 <sub>매일 자정(KST) 자동 갱신 · 다시 뽑기: Actions → 해당 워크플로 → Run workflow(reroll 체크)</sub>
 <!-- TODAY:END -->
