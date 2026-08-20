@@ -4,11 +4,11 @@ hello!
 
 ## 프로그래머스 문제
 <!-- TODAY:START -->
-**오늘의 문제 · 2026-08-20**
+**오늘의 문제 · 2026-08-21**
 
-1. [순위 검색](https://school.programmers.co.kr/learn/courses/30/lessons/72412)
-2. [미로 탈출 명령어](https://school.programmers.co.kr/learn/courses/30/lessons/150365)
-3. [가장 큰 삼각형 덩어리](https://school.programmers.co.kr/learn/courses/30/lessons/389629)
+1. [기차 선로](https://school.programmers.co.kr/learn/courses/30/lessons/468381)
+2. [경사로의 개수](https://school.programmers.co.kr/learn/courses/30/lessons/214290)
+3. [최솟값 만들기](https://school.programmers.co.kr/learn/courses/30/lessons/12941)
 
 <sub>매일 자정(KST) 자동 갱신 · 다시 뽑기: Actions → 해당 워크플로 → Run workflow(reroll 체크)</sub>
 <!-- TODAY:END -->
