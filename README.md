@@ -6,16 +6,16 @@ hello!
 <!-- TODAY:START -->
 **오늘의 문제 · 2026-08-21**
 
-1. [기차 선로](https://school.programmers.co.kr/learn/courses/30/lessons/468381)
-2. [경사로의 개수](https://school.programmers.co.kr/learn/courses/30/lessons/214290)
-3. [최솟값 만들기](https://school.programmers.co.kr/learn/courses/30/lessons/12941)
+1. [제곱 개수 배열](https://school.programmers.co.kr/learn/courses/30/lessons/468380)
+2. [매출 하락 최소화](https://school.programmers.co.kr/learn/courses/30/lessons/72416)
+3. [줄 서는 방법](https://school.programmers.co.kr/learn/courses/30/lessons/12936)
 
 <sub>매일 자정(KST) 자동 갱신 · 다시 뽑기: Actions → 해당 워크플로 → Run workflow(reroll 체크)</sub>
 <!-- TODAY:END -->
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/heatmap-dark.svg?v=1787231508">
-  <img alt="이 저장소 풀이 잔디" src="assets/heatmap-light.svg?v=1787231508">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/heatmap-dark.svg?v=1787240095">
+  <img alt="이 저장소 풀이 잔디" src="assets/heatmap-light.svg?v=1787240095">
 </picture>
 
 출처 [pill27211-programmers-daily](https://github.com/pill27211/programmers-daily)
