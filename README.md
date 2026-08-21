@@ -4,11 +4,11 @@ hello!
 
 ## 프로그래머스 문제
 <!-- TODAY:START -->
-**오늘의 문제 · 2026-08-21**
+**오늘의 문제 · 2026-08-22**
 
-1. [제곱 개수 배열](https://school.programmers.co.kr/learn/courses/30/lessons/468380)
+1. [[1차] 프렌즈4블록](https://school.programmers.co.kr/learn/courses/30/lessons/17679)
 2. [매출 하락 최소화](https://school.programmers.co.kr/learn/courses/30/lessons/72416)
-3. [줄 서는 방법](https://school.programmers.co.kr/learn/courses/30/lessons/12936)
+3. [보물 찾기](https://school.programmers.co.kr/learn/courses/30/lessons/468378)
 
 <sub>매일 자정(KST) 자동 갱신 · 다시 뽑기: Actions → 해당 워크플로 → Run workflow(reroll 체크)</sub>
 <!-- TODAY:END -->
