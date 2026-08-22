@@ -4,11 +4,11 @@ hello!
 
 ## 프로그래머스 문제
 <!-- TODAY:START -->
-**오늘의 문제 · 2026-08-22**
+**오늘의 문제 · 2026-08-23**
 
-1. [[1차] 뉴스 클러스터링](https://school.programmers.co.kr/learn/courses/30/lessons/17677)
-2. [징검다리](https://school.programmers.co.kr/learn/courses/30/lessons/43236)
-3. [보물 찾기](https://school.programmers.co.kr/learn/courses/30/lessons/468378)
+1. [아방가르드 타일링](https://school.programmers.co.kr/learn/courses/30/lessons/181186)
+2. [매출 하락 최소화](https://school.programmers.co.kr/learn/courses/30/lessons/72416)
+3. [마법의 엘리베이터](https://school.programmers.co.kr/learn/courses/30/lessons/148653)
 
 <sub>매일 자정(KST) 자동 갱신 · 다시 뽑기: Actions → 해당 워크플로 → Run workflow(reroll 체크)</sub>
 <!-- TODAY:END -->
