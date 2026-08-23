@@ -4,11 +4,11 @@ hello!
 
 ## 프로그래머스 문제
 <!-- TODAY:START -->
-**오늘의 문제 · 2026-08-23**
+**오늘의 문제 · 2026-08-24**
 
-1. [매칭 점수](https://school.programmers.co.kr/learn/courses/30/lessons/42893)
-2. [튜브의 소개팅](https://school.programmers.co.kr/learn/courses/30/lessons/1839)
-3. [마법의 엘리베이터](https://school.programmers.co.kr/learn/courses/30/lessons/148653)
+1. [숫자 블록](https://school.programmers.co.kr/learn/courses/30/lessons/12923)
+2. [징검다리](https://school.programmers.co.kr/learn/courses/30/lessons/43236)
+3. [봉인된 주문](https://school.programmers.co.kr/learn/courses/30/lessons/389481)
 
 <sub>매일 자정(KST) 자동 갱신 · 다시 뽑기: Actions → 해당 워크플로 → Run workflow(reroll 체크)</sub>
 <!-- TODAY:END -->
