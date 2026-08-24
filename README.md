@@ -6,7 +6,7 @@ hello!
 <!-- TODAY:START -->
 **오늘의 문제 · 2026-08-25**
 
-1. [[PCCP 기출문제] 4번 / 수레 움직이기](https://school.programmers.co.kr/learn/courses/30/lessons/250134)
+1. [미로 탈출 명령어](https://school.programmers.co.kr/learn/courses/30/lessons/150365)
 2. [경사로의 개수](https://school.programmers.co.kr/learn/courses/30/lessons/214290)
 3. [바이러스 파이프](https://school.programmers.co.kr/learn/courses/30/lessons/468373)
 
@@ -14,8 +14,8 @@ hello!
 <!-- TODAY:END -->
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/heatmap-dark.svg?v=1787537644">
-  <img alt="이 저장소 풀이 잔디" src="assets/heatmap-light.svg?v=1787537644">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/heatmap-dark.svg?v=1787586020">
+  <img alt="이 저장소 풀이 잔디" src="assets/heatmap-light.svg?v=1787586020">
 </picture>
 
 출처 [pill27211-programmers-daily](https://github.com/pill27211/programmers-daily)
