@@ -4,11 +4,11 @@ hello!
 
 ## 프로그래머스 문제
 <!-- TODAY:START -->
-**오늘의 문제 · 2026-08-25**
+**오늘의 문제 · 2026-08-26**
 
-1. [미로 탈출 명령어](https://school.programmers.co.kr/learn/courses/30/lessons/150365)
-2. [경사로의 개수](https://school.programmers.co.kr/learn/courses/30/lessons/214290)
-3. [바이러스 파이프](https://school.programmers.co.kr/learn/courses/30/lessons/468373)
+1. [최솟값 만들기](https://school.programmers.co.kr/learn/courses/30/lessons/12941)
+2. [[PCCP 기출문제] 4번 / 수레 움직이기](https://school.programmers.co.kr/learn/courses/30/lessons/250134)
+3. [징검다리](https://school.programmers.co.kr/learn/courses/30/lessons/43236)
 
 <sub>매일 자정(KST) 자동 갱신 · 다시 뽑기: Actions → 해당 워크플로 → Run workflow(reroll 체크)</sub>
 <!-- TODAY:END -->
