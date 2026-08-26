@@ -4,11 +4,11 @@ hello!
 
 ## 프로그래머스 문제
 <!-- TODAY:START -->
-**오늘의 문제 · 2026-08-26**
+**오늘의 문제 · 2026-08-27**
 
-1. [줄 서는 방법](https://school.programmers.co.kr/learn/courses/30/lessons/12936)
-2. [아방가르드 타일링](https://school.programmers.co.kr/learn/courses/30/lessons/181186)
-3. [4단 고음](https://school.programmers.co.kr/learn/courses/30/lessons/1831)
+1. [징검다리](https://school.programmers.co.kr/learn/courses/30/lessons/43236)
+2. [스티커 모으기(2)](https://school.programmers.co.kr/learn/courses/30/lessons/12971)
+3. [[3차] n진수 게임](https://school.programmers.co.kr/learn/courses/30/lessons/17687)
 
 <sub>매일 자정(KST) 자동 갱신 · 다시 뽑기: Actions → 해당 워크플로 → Run workflow(reroll 체크)</sub>
 <!-- TODAY:END -->
