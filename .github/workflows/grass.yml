@@ -43,7 +43,7 @@ jobs:
         if: github.event_name != 'push'
         env:
           REROLL: ${{ inputs.reroll }}
-          PICK_LANG: cpp        # C++로 제출 가능한 문제만 추천
+          PICK_LANG: python3        # C++로 제출 가능한 문제만 추천
         run: node .github/scripts/pick-problem.mjs
 
       - name: 변경분 커밋 (+이미지 캐시 무효화)
