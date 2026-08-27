@@ -6,9 +6,9 @@ hello!
 <!-- TODAY:START -->
 **오늘의 문제 · 2026-08-27**
 
-1. [징검다리](https://school.programmers.co.kr/learn/courses/30/lessons/43236)
-2. [스티커 모으기(2)](https://school.programmers.co.kr/learn/courses/30/lessons/12971)
-3. [전화번호 목록](https://school.programmers.co.kr/learn/courses/30/lessons/42577)
+1. [주차 요금 계산](https://school.programmers.co.kr/learn/courses/30/lessons/92341)
+2. [발전소 회로 복구](https://school.programmers.co.kr/learn/courses/30/lessons/468375)
+3. [징검다리](https://school.programmers.co.kr/learn/courses/30/lessons/43236)
 
 <sub>매일 자정(KST) 자동 갱신 · 다시 뽑기: Actions → 해당 워크플로 → Run workflow(reroll 체크)</sub>
 <!-- TODAY:END -->
