@@ -4,18 +4,18 @@ hello!
 
 ## 프로그래머스 문제
 <!-- TODAY:START -->
-**오늘의 문제 · 2026-09-07**
+**오늘의 문제 · 2026-09-08**
 
-1. [격자 뒤집기 미로](https://school.programmers.co.kr/learn/courses/30/lessons/389630)
-2. [[PCCP 기출문제] 4번 / 수식 복원하기](https://school.programmers.co.kr/learn/courses/30/lessons/340210)
-3. [타겟 넘버](https://school.programmers.co.kr/learn/courses/30/lessons/43165)
+1. [숫자의 표현](https://school.programmers.co.kr/learn/courses/30/lessons/12924)
+2. [격자 뒤집기 미로](https://school.programmers.co.kr/learn/courses/30/lessons/389630)
+3. [봉인된 주문](https://school.programmers.co.kr/learn/courses/30/lessons/389481)
 
 <sub>매일 자정(KST) 자동 갱신 · 다시 뽑기: Actions → 해당 워크플로 → Run workflow(reroll 체크)</sub>
 <!-- TODAY:END -->
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/heatmap-dark.svg?v=1788715898">
-  <img alt="이 저장소 풀이 잔디" src="assets/heatmap-light.svg?v=1788715898">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/heatmap-dark.svg?v=1788807704">
+  <img alt="이 저장소 풀이 잔디" src="assets/heatmap-light.svg?v=1788807704">
 </picture>
 
 출처 [pill27211-programmers-daily](https://github.com/pill27211/programmers-daily)
