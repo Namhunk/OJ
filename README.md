@@ -4,18 +4,18 @@ hello!
 
 ## 프로그래머스 문제
 <!-- TODAY:START -->
-**오늘의 문제 · 2026-09-09**
+**오늘의 문제 · 2026-09-10**
 
-1. [격자 뒤집기 미로](https://school.programmers.co.kr/learn/courses/30/lessons/389630)
-2. [에어컨](https://school.programmers.co.kr/learn/courses/30/lessons/214289)
-3. [괄호 변환](https://school.programmers.co.kr/learn/courses/30/lessons/60058)
+1. [가장 큰 삼각형 덩어리](https://school.programmers.co.kr/learn/courses/30/lessons/389629)
+2. [보물 찾기](https://school.programmers.co.kr/learn/courses/30/lessons/468378)
+3. [유사 칸토어 비트열](https://school.programmers.co.kr/learn/courses/30/lessons/148652)
 
 <sub>매일 자정(KST) 자동 갱신 · 다시 뽑기: Actions → 해당 워크플로 → Run workflow(reroll 체크)</sub>
 <!-- TODAY:END -->
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/heatmap-dark.svg?v=1788891749">
-  <img alt="이 저장소 풀이 잔디" src="assets/heatmap-light.svg?v=1788891749">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/heatmap-dark.svg?v=1788978091">
+  <img alt="이 저장소 풀이 잔디" src="assets/heatmap-light.svg?v=1788978091">
 </picture>
 
 출처 [pill27211-programmers-daily](https://github.com/pill27211/programmers-daily)
