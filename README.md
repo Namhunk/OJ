@@ -4,18 +4,18 @@ hello!
 
 ## 프로그래머스 문제
 <!-- TODAY:START -->
-**오늘의 문제 · 2026-09-15**
+**오늘의 문제 · 2026-09-16**
 
-1. [다음 큰 숫자](https://school.programmers.co.kr/learn/courses/30/lessons/12911)
-2. [가장 큰 삼각형 덩어리](https://school.programmers.co.kr/learn/courses/30/lessons/389629)
-3. [미로 탈출 명령어](https://school.programmers.co.kr/learn/courses/30/lessons/150365)
+1. [격자 뒤집기 미로](https://school.programmers.co.kr/learn/courses/30/lessons/389630)
+2. [발전소 회로 복구](https://school.programmers.co.kr/learn/courses/30/lessons/468375)
+3. [[PCCP 기출문제] 3번 / 아날로그 시계](https://school.programmers.co.kr/learn/courses/30/lessons/250135)
 
 <sub>매일 자정(KST) 자동 갱신 · 다시 뽑기: Actions → 해당 워크플로 → Run workflow(reroll 체크)</sub>
 <!-- TODAY:END -->
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/heatmap-dark.svg?v=1789440766">
-  <img alt="이 저장소 풀이 잔디" src="assets/heatmap-light.svg?v=1789440766">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/heatmap-dark.svg?v=1789497888">
+  <img alt="이 저장소 풀이 잔디" src="assets/heatmap-light.svg?v=1789497888">
 </picture>
 
 출처 [pill27211-programmers-daily](https://github.com/pill27211/programmers-daily)
