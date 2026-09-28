@@ -4,18 +4,18 @@ hello!
 
 ## 프로그래머스 문제
 <!-- TODAY:START -->
-**오늘의 문제 · 2026-09-28**
+**오늘의 문제 · 2026-09-29**
 
-1. [짝지어 제거하기](https://school.programmers.co.kr/learn/courses/30/lessons/12973)
-2. [가장 큰 삼각형 덩어리](https://school.programmers.co.kr/learn/courses/30/lessons/389629)
-3. [스티커 모으기(2)](https://school.programmers.co.kr/learn/courses/30/lessons/12971)
+1. [가장 큰 삼각형 덩어리](https://school.programmers.co.kr/learn/courses/30/lessons/389629)
+2. [지게차와 크레인](https://school.programmers.co.kr/learn/courses/30/lessons/388353)
+3. [상담원 인원](https://school.programmers.co.kr/learn/courses/30/lessons/214288)
 
 <sub>매일 자정(KST) 자동 갱신 · 다시 뽑기: Actions → 해당 워크플로 → Run workflow(reroll 체크)</sub>
 <!-- TODAY:END -->
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/heatmap-dark.svg?v=1790572676">
-  <img alt="이 저장소 풀이 잔디" src="assets/heatmap-light.svg?v=1790572676">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/heatmap-dark.svg?v=1790629589">
+  <img alt="이 저장소 풀이 잔디" src="assets/heatmap-light.svg?v=1790629589">
 </picture>
 
 출처 [pill27211-programmers-daily](https://github.com/pill27211/programmers-daily)
