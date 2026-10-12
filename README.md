@@ -4,18 +4,18 @@ hello!
 
 ## 프로그래머스 문제
 <!-- TODAY:START -->
-**오늘의 문제 · 2026-10-12**
+**오늘의 문제 · 2026-10-13**
 
-1. [방문 길이](https://school.programmers.co.kr/learn/courses/30/lessons/49994)
-2. [네트워크](https://school.programmers.co.kr/learn/courses/30/lessons/43162)
-3. [격자 뒤집기 미로](https://school.programmers.co.kr/learn/courses/30/lessons/389630)
+1. [숫자 타자 대회](https://school.programmers.co.kr/learn/courses/30/lessons/136797)
+2. [격자 뒤집기 미로](https://school.programmers.co.kr/learn/courses/30/lessons/389630)
+3. [JadenCase 문자열 만들기](https://school.programmers.co.kr/learn/courses/30/lessons/12951)
 
 <sub>매일 자정(KST) 자동 갱신 · 다시 뽑기: Actions → 해당 워크플로 → Run workflow(reroll 체크)</sub>
 <!-- TODAY:END -->
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/heatmap-dark.svg?v=1791746586">
-  <img alt="이 저장소 풀이 잔디" src="assets/heatmap-light.svg?v=1791746586">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/heatmap-dark.svg?v=1791843895">
+  <img alt="이 저장소 풀이 잔디" src="assets/heatmap-light.svg?v=1791843895">
 </picture>
 
 출처 [pill27211-programmers-daily](https://github.com/pill27211/programmers-daily)
