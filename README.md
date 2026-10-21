@@ -4,18 +4,18 @@ hello!
 
 ## 프로그래머스 문제
 <!-- TODAY:START -->
-**오늘의 문제 · 2026-10-21**
+**오늘의 문제 · 2026-10-22**
 
-1. [상담원 인원](https://school.programmers.co.kr/learn/courses/30/lessons/214288)
-2. [다리를 지나는 트럭](https://school.programmers.co.kr/learn/courses/30/lessons/42583)
-3. [가장 큰 삼각형 덩어리](https://school.programmers.co.kr/learn/courses/30/lessons/389629)
+1. [격자 뒤집기 미로](https://school.programmers.co.kr/learn/courses/30/lessons/389630)
+2. [지게차와 크레인](https://school.programmers.co.kr/learn/courses/30/lessons/388353)
+3. [에어컨](https://school.programmers.co.kr/learn/courses/30/lessons/214289)
 
 <sub>매일 자정(KST) 자동 갱신 · 다시 뽑기: Actions → 해당 워크플로 → Run workflow(reroll 체크)</sub>
 <!-- TODAY:END -->
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/heatmap-dark.svg?v=1792522805">
-  <img alt="이 저장소 풀이 잔디" src="assets/heatmap-light.svg?v=1792522805">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/heatmap-dark.svg?v=1792609762">
+  <img alt="이 저장소 풀이 잔디" src="assets/heatmap-light.svg?v=1792609762">
 </picture>
 
 출처 [pill27211-programmers-daily](https://github.com/pill27211/programmers-daily)
