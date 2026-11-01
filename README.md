@@ -4,18 +4,18 @@ hello!
 
 ## 프로그래머스 문제
 <!-- TODAY:START -->
-**오늘의 문제 · 2026-11-01**
+**오늘의 문제 · 2026-11-02**
 
-1. [행렬 테두리 회전하기](https://school.programmers.co.kr/learn/courses/30/lessons/77485)
-2. [격자 뒤집기 미로](https://school.programmers.co.kr/learn/courses/30/lessons/389630)
-3. [발전소 회로 복구](https://school.programmers.co.kr/learn/courses/30/lessons/468375)
+1. [N-Queen](https://school.programmers.co.kr/learn/courses/30/lessons/12952)
+2. [보물 찾기](https://school.programmers.co.kr/learn/courses/30/lessons/468378)
+3. [격자 뒤집기 미로](https://school.programmers.co.kr/learn/courses/30/lessons/389630)
 
 <sub>매일 자정(KST) 자동 갱신 · 다시 뽑기: Actions → 해당 워크플로 → Run workflow(reroll 체크)</sub>
 <!-- TODAY:END -->
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/heatmap-dark.svg?v=1793473706">
-  <img alt="이 저장소 풀이 잔디" src="assets/heatmap-light.svg?v=1793473706">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/heatmap-dark.svg?v=1793561045">
+  <img alt="이 저장소 풀이 잔디" src="assets/heatmap-light.svg?v=1793561045">
 </picture>
 
 출처 [pill27211-programmers-daily](https://github.com/pill27211/programmers-daily)
