@@ -4,18 +4,18 @@ hello!
 
 ## 프로그래머스 문제
 <!-- TODAY:START -->
-**오늘의 문제 · 2026-11-03**
+**오늘의 문제 · 2026-11-04**
 
-1. [가장 큰 삼각형 덩어리](https://school.programmers.co.kr/learn/courses/30/lessons/389629)
-2. [[PCCP 기출문제] 4번 / 수식 복원하기](https://school.programmers.co.kr/learn/courses/30/lessons/340210)
-3. [할인 행사](https://school.programmers.co.kr/learn/courses/30/lessons/131127)
+1. [[1차] 프렌즈4블록](https://school.programmers.co.kr/learn/courses/30/lessons/17679)
+2. [아방가르드 타일링](https://school.programmers.co.kr/learn/courses/30/lessons/181186)
+3. [가장 큰 삼각형 덩어리](https://school.programmers.co.kr/learn/courses/30/lessons/389629)
 
 <sub>매일 자정(KST) 자동 갱신 · 다시 뽑기: Actions → 해당 워크플로 → Run workflow(reroll 체크)</sub>
 <!-- TODAY:END -->
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/heatmap-dark.svg?v=1793660424">
-  <img alt="이 저장소 풀이 잔디" src="assets/heatmap-light.svg?v=1793660424">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/heatmap-dark.svg?v=1793738912">
+  <img alt="이 저장소 풀이 잔디" src="assets/heatmap-light.svg?v=1793738912">
 </picture>
 
 출처 [pill27211-programmers-daily](https://github.com/pill27211/programmers-daily)
