@@ -4,18 +4,18 @@ hello!
 
 ## 프로그래머스 문제
 <!-- TODAY:START -->
-**오늘의 문제 · 2026-11-11**
+**오늘의 문제 · 2026-11-12**
 
-1. [숫자 타자 대회](https://school.programmers.co.kr/learn/courses/30/lessons/136797)
-2. [[3차] 압축](https://school.programmers.co.kr/learn/courses/30/lessons/17684)
-3. [격자 뒤집기 미로](https://school.programmers.co.kr/learn/courses/30/lessons/389630)
+1. [전력망을 둘로 나누기](https://school.programmers.co.kr/learn/courses/30/lessons/86971)
+2. [가장 큰 삼각형 덩어리](https://school.programmers.co.kr/learn/courses/30/lessons/389629)
+3. [[PCCP 기출문제] 4번 / 수레 움직이기](https://school.programmers.co.kr/learn/courses/30/lessons/250134)
 
 <sub>매일 자정(KST) 자동 갱신 · 다시 뽑기: Actions → 해당 워크플로 → Run workflow(reroll 체크)</sub>
 <!-- TODAY:END -->
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/heatmap-dark.svg?v=1794345217">
-  <img alt="이 저장소 풀이 잔디" src="assets/heatmap-light.svg?v=1794345217">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/heatmap-dark.svg?v=1794433566">
+  <img alt="이 저장소 풀이 잔디" src="assets/heatmap-light.svg?v=1794433566">
 </picture>
 
 출처 [pill27211-programmers-daily](https://github.com/pill27211/programmers-daily)
