@@ -6,6 +6,7 @@
   SOLVEDAC_CLIENT_SECRET  Backstage 앱 client secret (필수)
   OUTPUT_PATH             저장할 SVG 경로 (기본값: solvedac-streak.svg)
   STREAK_MODE             count(푼 문제 수, 기본값) 또는 level(난이도)
+  THEME                   dark(기본값) 또는 light
 
 표준 라이브러리만 사용하므로 pip 설치가 필요 없습니다.
 """
@@ -23,14 +24,17 @@ API = "https://solved.ac/api/v4"
 KST = timezone(timedelta(hours=9))
 
 # solved.ac 다크 테마 색 (스크린샷에서 추출)
-PAGE_BG = "#09090b"
-CARD_BG = "#181a1c"
-HEADER_BG = "#191d1e"
-EMPTY = "#2a2c2f"
-TEXT = "#e5e7eb"
-SUB = "#a9b5b6"
-GREEN = "#4ade80"
-VACATION = "#724a29"
+THEMES = {
+    "dark": dict(PAGE_BG="#09090b", CARD_BG="#181a1c", HEADER_BG="#191d1e", HEADER_TINT="#1e3328",
+                 BORDER="none", EMPTY="#2a2c2f", TEXT="#e5e7eb", SUB="#a9b5b6", GREEN="#4ade80", VACATION="#724a29"),
+    "light": dict(PAGE_BG="#ffffff", CARD_BG="#ffffff", HEADER_BG="#f8faf9", HEADER_TINT="#dcf5e5",
+                  BORDER="#e2e5e9", EMPTY="#ebedf0", TEXT="#1f2328", SUB="#6b7280", GREEN="#16a34a", VACATION="#d4a373"),
+}
+globals().update(THEMES["dark"])
+
+
+def apply_theme(name):
+    globals().update(THEMES.get(name, THEMES["dark"]))
 COUNT_COLORS = ["#ffd459", "#ffaa69", "#ff7c79", "#ff5f84"]  # 적음 → 많음
 
 # 난이도 모드: 그날 푼 가장 어려운 문제의 티어 색
@@ -175,16 +179,16 @@ def build_svg(profile, activity, today, mode="count"):
 <defs>
   <linearGradient id="hg" x1="0" x2="1" y1="0" y2="0">
     <stop offset="0" stop-color="{HEADER_BG}"/><stop offset="0.75" stop-color="{HEADER_BG}"/>
-    <stop offset="1" stop-color="#1e3328"/>
+    <stop offset="1" stop-color="{HEADER_TINT}"/>
   </linearGradient>
 </defs>
 <rect width="{width}" height="{height}" fill="{PAGE_BG}"/>
-<rect width="{width}" height="{header_h}" rx="10" fill="url(#hg)"/>
+<rect x="0.5" y="0.5" width="{width - 1}" height="{header_h - 1}" rx="10" fill="url(#hg)" stroke="{BORDER}"/>
 <text x="{pad}" y="{header_h / 2 + 6}" class="lbl">현재</text>
 <text x="{pad + 42}" y="{header_h / 2 + 15}" class="big">{current}</text>
 <text x="{pad + 54 + len(str(current)) * 24}" y="{header_h / 2 + 6}" class="lbl">일 연속 문제해결</text>
 <text x="{width - pad}" y="{header_h / 2 + 7}" text-anchor="end"><tspan class="best">최장</tspan><tspan dx="8" class="bestn">{best}</tspan></text>
-<rect y="{card2_y}" width="{width}" height="{card2_h}" rx="10" fill="{CARD_BG}"/>
+<rect x="0.5" y="{card2_y + 0.5}" width="{width - 1}" height="{card2_h - 1}" rx="10" fill="{CARD_BG}" stroke="{BORDER}"/>
 {"".join(parts)}
 {day_labels}
 {legend}
@@ -200,6 +204,7 @@ def main():
     handle = os.environ["SOLVEDAC_HANDLE"].strip()
     out = os.environ.get("OUTPUT_PATH", "solvedac-streak.svg")
     mode = os.environ.get("STREAK_MODE", "count").strip().lower()
+    apply_theme(os.environ.get("THEME", "dark").strip().lower())
     today = datetime.now(KST).date()
     since = today - timedelta(days=53 * 7)
 
