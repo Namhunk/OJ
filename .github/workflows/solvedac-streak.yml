@@ -3,7 +3,18 @@ name: solved.ac streak card
 on:
   schedule:
     - cron: "7 15 * * *"   # 매일 00:07 (KST) — UTC 기준 15:07
-  workflow_dispatch:        # Actions 탭에서 수동 실행
+  workflow_dispatch:        # Actions 탭 → Run workflow 에서 직접 선택해 실행
+    inputs:
+      theme:
+        description: "테마 (기본값: 저장소 변수 THEME)"
+        type: choice
+        options: [default, light, dark]
+        default: default
+      mode:
+        description: "잔디 색 기준 (기본값: 저장소 변수 STREAK_MODE)"
+        type: choice
+        options: [default, count, level]
+        default: default
 
 permissions:
   contents: write
@@ -24,7 +35,9 @@ jobs:
           SOLVEDAC_CLIENT_ID: ${{ secrets.SOLVEDAC_CLIENT_ID }}
           SOLVEDAC_CLIENT_SECRET: ${{ secrets.SOLVEDAC_CLIENT_SECRET }}
           OUTPUT_PATH: solvedac-streak.svg
-          STREAK_MODE: count   # 난이도 색으로 보려면 level
+          # 우선순위: Run workflow 에서 고른 값 → 저장소 변수 → 기본값
+          THEME: ${{ (inputs.theme != '' && inputs.theme != 'default') && inputs.theme || vars.THEME || 'light' }}
+          STREAK_MODE: ${{ (inputs.mode != '' && inputs.mode != 'default') && inputs.mode || vars.STREAK_MODE || 'count' }}
         run: python scripts/solvedac_streak.py
 
       - name: Commit if changed
