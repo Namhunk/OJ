@@ -3,38 +3,29 @@ import random, math
 input = sys.stdin.readline
 
 def solve(N, A, B):
-    DP = [[[-float('inf')]*3 for _ in range(N+1)] for _ in range(N)]
-    DP[0][0][0] = 0     # 아무것도 세우지 않는 경우
-    DP[0][1][1] = A[0]  # 첫 위치에 타워를 세웠을때
+    DP = [[0]*(N) for _ in range(N)]
+
+    DP[0][0] = A[0]
+    for i in range(1, N):
+        DP[i][0] = max(DP[i-1][0], A[i])
 
     for i in range(1, N):
-        for j in range(N+1):
-            # 현재 위치에 타워를 세우지 않는 경우
-            DP[i][j][0] = max(DP[i-1][j][0], DP[i-1][j][1], DP[i-1][j][2])
+        for j in range(i+1):
+            if j > 0:
+                DP[i][j] = max(DP[i-1][j], DP[i-1][j-1] + A[i], DP[i-2][j-2] + A[i] + A[i-1] + B[i-1])
 
-            if j >= 1: # 현재 위치에 타워를 세울 수 있는 경우는 j가 0보다 큰 경우
-                DP[i][j][1] = max(DP[i-1][j-1][0], DP[i-1][j-1][1], DP[i-1][j-1][2]) + A[i]
-
-                # 다리를 만들 수 있는 경우는 이전 위치에 타워를 세운 경우
-                DP[i][j][2] = DP[i-1][j-1][1] + A[i] + B[i-1]
-
-    for j in range(1, N+1):
-        print(max(DP[N-1][j]))
+    for i in DP[-1]:
+        print(i)
 
 def main():
     # 2 <= N <= 2000
     N = int(input().strip())
-
     # 0 <= A[i] <= 10**9
     A = list(map(int, input().strip().split()))
-
-
     # 0 <= B[i] <= 10**9
     B = list(map(int, input().strip().split()))
 
     solve(N, A, B)
-    
-
 
 if __name__ == '__main__':
     main()  
@@ -55,21 +46,11 @@ N개의 줄에 걸쳐서 비용 i로 얻을 수 있는 최대 가치
 2. 현재 위치에 타워를 세우는 경우
 3. 이전 위치와 다리가 연결된 경우
 
-현재 고려중인 타워가 i 일때
-j개의 타워를 세워야 하고
-k의 case로 선택
+2차원 배열로 수행할때, 0부터 i 까지 위치들 중 j개를 선택할 때
+1   1   1   1  
+2  13  13  13
+3  14  15  15
+4   8  18  21
 
-j = 1
-0 1 2 3
-1 2 3 4
-0 0 0 0
-
-j = 2
-0 1  13  14
-1 3  5   8
-0 13 14  
-
-arr[i][j][0] = max(arr[i-1][j][0], arr[i-1][j][1], arr[i-1][j][2])
-arr[i][j][1] = max(arr[i-1][j-1][0], arr[i-1][j-1][1], arr[i-1][j-1][2]) + A[i]
-arr[i][j][2] = arr[i-1][j-1][1] + A[i] + B[i-1]
+DP[i][j] = max(DP[i-1][j], DP[i-1][j-1] + A[i], DP[i-2][j-2] + A[i] + A[i-1] + B[i])
 """
